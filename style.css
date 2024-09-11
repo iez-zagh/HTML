@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #afa3a3;
+}
+
+.sideleft, .chatbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideleft {
+    width: 30%;
+    background-color: red;
+    padding: 5%;
+}
+
+.chatbody {
+    width: 70%;
+    background-color: rgb(181, 199, 20);
+    padding: 5%;
+}
+
+.headerleft, .headerbody {
+    background-color: blue;
+    flex: 0 0 5%; /* Fixed height to 5% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentleft, .contentbody {
+    flex-grow: 1;
+    background-color: lightgray;
+}
